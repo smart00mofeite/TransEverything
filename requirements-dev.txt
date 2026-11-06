@@ -1,0 +1,8 @@
+# ── 仅开发/打包用，不随软件分发 ──────────────────────
+-r requirements.txt
+
+pyinstaller>=6.0          # 生成 exe
+virtualenv>=20.0          # 建立独立打包环境（避免 conda 私有 DLL 混入）
+
+# 安装包编译器（不通过 pip 安装，需手动装 Inno Setup 6）：
+#   https://jrsoftware.org/isinfo.php

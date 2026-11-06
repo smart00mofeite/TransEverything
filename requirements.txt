@@ -1,0 +1,20 @@
+# ── 运行依赖（打包时会全部打进安装包）───────────────
+# 文档处理
+python-docx>=1.1.0
+fpdf2>=2.7.0
+pdfplumber>=0.10.0
+pypdfium2>=4.0.0          # PDF 逐页渲染成 PNG
+
+# 表格处理
+openpyxl>=3.1.0
+python-calamine>=0.2.0    # 读取旧版 .xls
+
+# 图片处理
+Pillow>=10.0.0
+resvg_py>=0.5.0           # SVG 渲染（自包含，替代 cairosvg）
+
+# 界面
+PySide6>=6.7
+
+# 可选：resvg_py 缺失时的 SVG 兜底（依赖系统 cairo 库，不建议打包）
+# cairosvg>=2.7.0
